@@ -15,7 +15,7 @@
 ---
 
 
-How to Get Updated Actor/Actress Data from:
+# How to Get Updated Actor/Actress Data:
 
 0. Go to RapidAPI and create your own Key:
 https://rapidapi.com/apidojo/api/imdb8
@@ -39,6 +39,13 @@ https://rapidapi.com/apidojo/api/imdb8
 4. After creating the *links.json* and *groups.json*, you have to manually copy them into **Bollywood.js** into their respective places. ( I dont really know JS, so if there is a script that can replace manually copying this over, please let me know). This will be used by **index.html** for viewing.
 
 5. Run *index.html* in a live server. 
+
+---
+## Using D3Blocks
+
+- Follow steps 0 to 3 from the above instructions
+- Use **create_D3_Blocks.py** to create 3 new html files in D3Blocks.py Folder.
+-- NOTE: You may want to change the value for the Weight threshold to show more connections.
 
 ---
 
