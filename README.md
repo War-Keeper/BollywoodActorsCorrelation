@@ -20,13 +20,13 @@
 0. Go to RapidAPI and create your own Key:
 https://rapidapi.com/apidojo/api/imdb8
 
-1. After Getting you key, copy it to the Fetch_all_info.py (line 10) and hit run. This will create a folder called jsons that will contain all the files for each actor based on their IMDB ID.
+1. After Getting you key, copy it to the **Fetch_all_info.py** (line 10) and hit run. This will create a folder called jsons that will contain all the files for each actor based on their IMDB ID.
 
     **Note**: This is a free version, so you only get 500 Api requests/Month, There is also a limit on the number of requests per 5 seconds, that is why there is a 5s sleep period between each request.
 
 2. Run **extract_films_lists.py** to extract all the films that the person has been a Actor/Actress or a Producer in. You can change this criteria to all more (ex. Thanks, Soundtrack, Self, etc).
 
-    The File created is already provided, called *All_fils.json*
+    The File created is already provided, called *All_films.json*
 
 3. You can now use this Data to run either *create_edge_list.py*, or *create_table.py*
 

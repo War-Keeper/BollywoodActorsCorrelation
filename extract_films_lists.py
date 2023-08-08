@@ -16,7 +16,9 @@ def read_json():
 
             file_contents = user_file.read()
 
-            people[file[:-5]] = json.loads(file_contents)
+            jsn = json.loads(file_contents)
+
+            people[jsn["base"]["name"]] = jsn
 
     return people
 
@@ -26,14 +28,17 @@ def get_filmography(people):
 
     for person in people.keys():
 
-        films[people[person]["base"]["name"]] = []
+        films[person] = {}
+
 
         for i in people[person]["filmography"]:
             # print(i["category"])
             # print(i["id"][7:-1])
 
             if i["category"] == "actor" or i["category"] == "producer" or i["category"] == "actress":
-                films[people[person]["base"]["name"]].append(i["id"][7:-1])
+                if i["titleType"] == "movie" or i["titleType"] == "tvSeries" or i["titleType"] == "tvEpisode":
+
+                    films[person][i["id"][7:-1]] = i["title"]
 
 
     return films
@@ -48,6 +53,8 @@ os.chdir(owd)
 
 with open("All_films.json", "w") as outfile:
     json.dump(films, outfile)
+
+# print(list(films["Amitabh Bachchan"].keys()))
 
 # print name
 # print(people["nm0000821"]["base"]["name"])
