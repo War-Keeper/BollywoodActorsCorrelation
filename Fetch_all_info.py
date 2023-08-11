@@ -8,7 +8,7 @@ url = "https://imdb8.p.rapidapi.com/actors/get-all-filmography"
 # querystring = {"nconst":"nm0474774"}
 
 headers = {
-	"X-RapidAPI-Key": "87bd96ebefmsh664d9416af24b6fp1c5147jsndccbc9c4f2ac",
+	"X-RapidAPI-Key": "xxxxxx",
 	"X-RapidAPI-Host": "imdb8.p.rapidapi.com"
 }
 
