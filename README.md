@@ -4,6 +4,9 @@
 
 ### Scripted by: Chaitanya Patel, https://www.linkedin.com/in/cpatel3/
 
+# dataframe 1: https://war-keeper.github.io/BollywoodActorsCorrelation/index2.html
+# dataframe 2: https://war-keeper.github.io/BollywoodActorsCorrelation/index3.html
+
 ---
 
 ### **Note** That the csv and json files that are provided were created on **1/31/2023** using IMDB, if you want to get updated data, please follow the instructions below.
